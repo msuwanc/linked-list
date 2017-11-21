@@ -1,9 +1,10 @@
 import models.Node
 
+// Wrong answer in case isn't loop but still return true
 class LinkedList {
   def isLoop(root: Node): Boolean = {
     var flag: Boolean = true
-    var result: Boolean = true
+    var result: Boolean = false
 
     var turtle: Node = root
     var rabbit: Node = root
